@@ -1,0 +1,143 @@
+body {
+  background-color: rgb(245, 231, 216);
+  width: 99vh;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal-container {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 0 solid rgb(248, 241, 233);
+  border-radius: 10px;
+  height: 600px;
+  width: 700px;
+}
+
+.preview-img-container {
+  width: 50%;
+  height: 100%;
+  background-image: url("./images/image-product-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.preview-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info-item-container {
+  width: 40%;
+  height: 100%;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+
+.item-name-container {
+  color: rgb(141, 139, 139);
+  font-weight: bold;
+}
+
+.title-container {
+  font-size: 20px;
+}
+
+.description-container {
+  color: rgb(141, 139, 139);
+  font-style: italic;
+  font-size: 20px;
+}
+
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.actual-price {
+  font-size: 36px;
+  color: rgb(47, 145, 91);
+  font-weight: bold;
+}
+
+.old-price {
+  color: gray;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.add-button {
+  width: 90%;
+  height: 45px;
+  border: 0 solid white;
+  border-radius: 8px;
+  background-color: rgb(47, 145, 91);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .principal-container {
+    width: 90%;
+    
+  }
+
+  .preview-img-container {
+    background-image: url("./images/image-product-mobile.jpg");
+    width: 100%;
+    height: 40%;
+  }
+
+  .info-item-container {
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  .item-name-container {
+    font-size: 1rem;
+  }
+
+  .title-container {
+    font-size: 1rem;
+  }
+
+  .description-container {
+    font-size: 1rem;
+  }
+
+  .actual-price {
+    font-size: 2rem;
+  }
+
+  .price-container {
+    margin-top: -40px;
+  }
+
+  .button-container {
+    margin-top: -30px;
+  }
+}
